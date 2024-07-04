@@ -1,37 +1,23 @@
 import logo from './assets/images/logo.svg';
 import user from './assets/images/user.jpg';
+
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [sidebarState, setSidebarState] = useState(false);
+
+  function sidebarOpen() {
+    setSidebarState(!sidebarState);
+  }
+
   return (
     <>
-      <div className='sidebar'>
+      <div className={sidebarState ? 'sidebar open' : 'sidebar'}>
         <a className='sidebar-logo-link' href='#'>
           <img className='sidebar-logo-image' src={logo} alt='Логотип CloverChat' />
         </a>
         <ul className='nav-list'>
-          <li>
-            <a className='nav-link' href='#'>
-              <svg className='nav-link-icon' width='20.000000' height='20.000000' viewBox='0 0 20 20' fill='none'>
-                <desc>Created with Pixso.</desc>
-                <defs>
-                  <clipPath id='clip5_25'>
-                    <rect id='home' width='20.000000' height='20.000000' fill='white' fillOpacity='0' />
-                  </clipPath>
-                </defs>
-                <g clipPath='url(#clip5_25)'>
-                  <path
-                    id='path'
-                    d='M20 8.32L20 10.02C19.74 9.72 19.46 9.44 19.16 9.18L19.16 8.32C19.16 7.89 18.96 7.47 18.62 7.21L10.86 1.13C10.35 0.73 9.64 0.73 9.13 1.13L1.37 7.21C1.03 7.47 0.83 7.89 0.83 8.32L0.83 19.16L9.18 19.16C9.44 19.46 9.72 19.74 10.02 20L0 20L0 8.32C0 7.63 0.32 6.97 0.85 6.55L8.61 0.47C9.43 -0.17 10.56 -0.17 11.38 0.47L19.14 6.55C19.67 6.97 20 7.63 20 8.32ZM20 14.58C20 17.57 17.56 20 14.58 20C11.59 20 9.16 17.57 9.16 14.58C9.16 11.59 11.59 9.16 14.58 9.16C17.56 9.16 20 11.59 20 14.58ZM19.16 14.58C19.16 12.05 17.11 10 14.58 10C12.05 10 10 12.05 10 14.58C10 17.11 12.05 19.16 14.58 19.16C17.11 19.16 19.16 17.11 19.16 14.58ZM14.14 15.79C14.1 15.84 14 15.83 13.94 15.78L12.4 14.28L11.82 14.88L13.36 16.38C13.54 16.56 13.79 16.66 14.05 16.66C14.31 16.66 14.55 16.56 14.73 16.38L17.61 13.55L17.03 12.95L14.14 15.79Z'
-                    fill='currentColor'
-                    fillOpacity='1.000000'
-                    fillRule='nonzero'
-                  />
-                </g>
-              </svg>
-              Главная
-            </a>
-          </li>
           <li>
             <a className='nav-link' href='#'>
               <svg className='nav-link-icon' width='20.000000' height='20.000000' viewBox='0 0 20 20' fill='none'>
@@ -100,26 +86,31 @@ function App() {
           </li>
         </ul>
       </div>
-      <header className='header'>
+      <header
+        className='header'
+        onClick={() => {
+          if (sidebarState) {
+            sidebarOpen();
+          }
+        }}>
         <nav className='header-nav'>
-          <ul className='header-nav-list'>
-            <li>
-              <a className='header-nav-link' href='#'>
-                Главная{' '}
-              </a>
-            </li>
-            <li>
-              <a className='header-nav-link header-nav-link--active' href='#'>
-                / Агенты
-              </a>
-            </li>
-          </ul>
+          <button
+            className='menu-button'
+            onClick={() => {
+              sidebarOpen();
+            }}></button>
           <button className='user-button'>
             <img src={user} alt='Иконка пользователь' />
           </button>
         </nav>
       </header>
-      <main className='main'>
+      <main
+        className='main'
+        onClick={() => {
+          if (sidebarState) {
+            sidebarOpen();
+          }
+        }}>
         <div className='layout'>
           <div className='agents-wrapper'>
             <div className='agent-wrapper-inner'>
