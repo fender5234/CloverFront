@@ -1,3 +1,5 @@
+import ai from '../assets/images/ai.svg';
+
 function Bots() {
   return (
     <div className='bot'>

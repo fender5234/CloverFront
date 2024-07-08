@@ -1,0 +1,48 @@
+.edit-form {
+    color: #323842;
+}
+
+.edit-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-form-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 430px;
+}
+
+.edit-ask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.edit-form-label {
+    margin: 0 0 20px;
+}
+
+.edit-form-input {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.edit-form-tooltip {
+    display: block;
+    color: #323842;
+    padding: 10px;
+    border: 1px solid #e1e4ea;
+    border-radius: 10px;
+    background-color: #f3f4f7;
+    transition: opacity .5s linear;
+
+    &--open {
+        opacity: 1;
+    }
+}

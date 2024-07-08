@@ -1,12 +1,12 @@
 import logo from './assets/images/logo.svg';
 import user from './assets/images/user.jpg';
-import ai from './assets/images/speech.svg';
 
 import { useState } from 'react';
 import './App.css';
 
 import NewAgents from './componentns/NewAgents';
 import Bots from './componentns/Bots';
+import EditBot from './componentns/EditForm/EditBot'
 
 function App() {
   const [sidebarState, setSidebarState] = useState(false);
@@ -117,7 +117,8 @@ function App() {
         }}>
         <div className='layout'>
           {/* <NewAgents /> */}
-          <Bots />
+          {/* <Bots /> */}
+          <EditBot />
         </div>
       </main>
     </>
