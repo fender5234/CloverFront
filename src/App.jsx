@@ -4,7 +4,6 @@ import user from './assets/images/user.jpg';
 import { useState } from 'react';
 import './App.css';
 
-import NewAgents from './componentns/NewAgents';
 import Bots from './componentns/Bots';
 import EditBot from './componentns/EditForm/EditBot'
 
