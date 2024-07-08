@@ -1,8 +1,12 @@
 import logo from './assets/images/logo.svg';
 import user from './assets/images/user.jpg';
+import ai from './assets/images/speech.svg';
 
 import { useState } from 'react';
 import './App.css';
+
+import NewAgents from './componentns/NewAgents';
+import Bots from './componentns/Bots';
 
 function App() {
   const [sidebarState, setSidebarState] = useState(false);
@@ -112,15 +116,8 @@ function App() {
           }
         }}>
         <div className='layout'>
-          <div className='agents-wrapper'>
-            <div className='agent-wrapper-inner'>
-              <h1 className='agents-wrapper-header'>Создайте своего первого агента</h1>
-              <p className='agents-wrapper-text'>Агент - это чат бот на основе искуственного интеллекта, который будет самостоятельно консультировать ваших клиентов.</p>
-              <a className='agents-wrapper-link' href='#'>
-                Создать агента
-              </a>
-            </div>
-          </div>
+          {/* <NewAgents /> */}
+          <Bots />
         </div>
       </main>
     </>
