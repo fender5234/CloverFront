@@ -118,4 +118,9 @@
   transition: background-color 0.3s linear;
   text-align: center;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5352ad;
+  }
 }

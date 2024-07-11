@@ -5,9 +5,21 @@ import { useState } from 'react';
 function EditBot() {
   return (
     <form className='edit-form'>
-      <h2>Редактирование агента</h2>
+      <h2>Редактирование «Новый Агент»</h2>
       <div className='edit-form-wrapper'>
         <div className='edit-input-text'>
+          <div className='edit-form-input-wrapper'>
+            <div className='edit-header'>
+              <label className='edit-form-label' htmlFor='name-company'>
+                Название ai ассистента
+              </label>
+              <div className='edit-ask-wrapper'>
+                <img className='edit-ask' src={ask} alt='Подсказка' />
+                <span className='edit-form-tooltip'>Задайте имя ai ассистента, для представления в чате, чтобы он выглядел как живой сотрудник.</span>
+              </div>
+            </div>
+            <input className='edit-form-input' id='name-company' name='name-company' type='text' />
+          </div>
           <div className='edit-form-input-wrapper'>
             <div className='edit-header'>
               <label className='edit-form-label' htmlFor='name-company'>
@@ -20,27 +32,15 @@ function EditBot() {
             </div>
             <input className='edit-form-input' id='name-company' name='name-company' type='text' />
           </div>
-          <div className='edit-form-input-wrapper'>
-            <div className='edit-header'>
-              <label className='edit-form-label' htmlFor='name-company'>
-                Имя агента
-              </label>
-              <div className='edit-ask-wrapper'>
-                <img className='edit-ask' src={ask} alt='Подсказка' />
-                <span className='edit-form-tooltip'>Задайте имя агента, для представления в чате, чтобы он выглядел как живой сотрудник.</span>
-              </div>
-            </div>
-            <input className='edit-form-input' id='name-company' name='name-company' type='text' />
-          </div>
         </div>
         <div className='edit-form-input-wrapper edit-form-input-wrapper--textarea'>
           <div className='edit-header'>
             <label className='edit-form-label' htmlFor='name-company'>
-              Инструкция для агента
+              Инструкция для ai ассистента
             </label>
             <div className='edit-ask-wrapper'>
               <img className='edit-ask' src={ask} alt='Подсказка' />
-              <span className='edit-form-tooltip edit-form-tooltip--textarea'>Какая то важная инструкция для агента!</span>
+              <span className='edit-form-tooltip edit-form-tooltip--textarea'>Какая то важная инструкция для ai ассистента!</span>
             </div>
           </div>
           <textarea className='edit-form-input edit-form-input--textarea' id='name-company' name='name-company' type='text'></textarea>
@@ -60,11 +60,11 @@ function EditBot() {
         <div className='edit-form-input-wrapper edit-form-input-wrapper--file'>
           <div className='edit-header'>
             <label className='edit-form-label' htmlFor='name-company'>
-              Фото агента
+              Фото ai ассистента
             </label>
             <div className='edit-ask-wrapper'>
               <img className='edit-ask' src={ask} alt='Подсказка' />
-              <span className='edit-form-tooltip edit-form-tooltip--file'>Загрузите фото агента</span>
+              <span className='edit-form-tooltip edit-form-tooltip--file'>Загрузите фото ai ассистента</span>
             </div>
           </div>
           <input className='edit-form-input edit-form-input--file' id='name-company' name='name-company' type='file' />

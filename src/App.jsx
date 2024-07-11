@@ -5,7 +5,8 @@ import { useState } from 'react';
 import './App.css';
 
 import Bots from './componentns/Bots';
-import EditBot from './componentns/EditForm/EditBot'
+import EditBot from './componentns/EditForm/EditBot';
+import NewAgents from './componentns/NewAgents';
 
 function App() {
   const [sidebarState, setSidebarState] = useState(false);
@@ -40,7 +41,7 @@ function App() {
                   />
                 </g>
               </svg>
-              Агенты
+              AI Ассистенты
             </a>
           </li>
           <li>
