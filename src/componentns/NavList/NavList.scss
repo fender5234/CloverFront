@@ -1,0 +1,22 @@
+.nav-link {
+    display: block;
+    padding: 8px 30px;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 18px;
+    color: #e4e5e7e1;
+    transition: all 0.3s linear;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #2a303d;
+  }
+  
+  .nav-link svg {
+    margin-right: 10px;
+  }
+  
+  .nav-list {
+    padding: 20px 10px 10px;
+  }

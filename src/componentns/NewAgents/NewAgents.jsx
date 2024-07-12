@@ -1,3 +1,5 @@
+import './NewAgents.scss';
+
 function newAgents() {
   return (
     <div className='agents-wrapper'>

@@ -1,0 +1,39 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #212631;
+    border-bottom: 1px solid #2e3644;
+    z-index: 1;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 30px;
+    align-items: center;
+  }
+  
+  .header-nav-list {
+    display: flex;
+  }
+  
+  .header-nav-list li {
+    margin-left: 10px;
+  }
+  
+  .header-nav-link {
+    font-size: 20px;
+    color: #a6a8ad;
+    transition: color 0.4s linear;
+  }
+  
+  .header-nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .header-nav-link--active {
+    color: #6058b3;
+  }

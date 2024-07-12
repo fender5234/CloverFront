@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 280px;
+    background-color: #212631;
+    border-right: 1px solid #2e3644;
+    z-index: 2;
+  }
+  
+  .sidebar-logo-link {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #2e3644;
+  }
+  
+  .sidebar-logo-image {
+    display: block;
+    margin: 0 0 auto 0;
+  }
+
+  @media (max-width: 768px) {
+    #root {
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      transition: transform 1s linear;
+      transform: translateX(-280px);
+    }
+  
+    .sidebar.open {
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,43 @@
+.agents-wrapper {
+    display: flex;
+    height: 100%;
+    color: #a6a8ad;
+  }
+  
+  .agents-wrapper h1,
+  .agents-wrapper p {
+    text-align: center;
+  }
+  
+  .agent-wrapper-inner {
+    margin: auto;
+  }
+  
+  .agents-wrapper-header {
+    font-family: 'Montserrat-Bold';
+    font-size: 50px;
+    margin: 0 0 30px;
+  }
+  
+  .agents-wrapper-text {
+    max-width: 880px;
+    margin: 0 0 30px;
+  }
+  
+  .agents-wrapper-link {
+    display: block;
+    font-family: 'Montserrat-SemiBold';
+    padding: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #6261cc;
+    max-width: 200px;
+    margin: 0 auto;
+    transition: background-color 0.3s linear;
+    text-align: center;
+  }
+
+  .agents-wrapper-link:hover {
+    background-color: #5352ad;
+  }
