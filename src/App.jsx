@@ -5,7 +5,8 @@ import Header from './componentns/Header/Header';
 import SideBar from './componentns/SideBar/SideBar';
 
 import NewAgents from './componentns/NewAgents/NewAgents';
-import Bots from './componentns/Bots/Bots'
+import Bots from './componentns/Bots/Bots';
+import Integration from './componentns/Integration/Integration';
 import EditBot from './componentns/EditBot/EditBot';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           {/* <NewAgents /> */}
           {/* <Bots /> */}
           {/* <EditBot /> */}
+          <Integration />
         </div>
       </main>
     </>
