@@ -7,6 +7,16 @@ function EditBot() {
     <form className='edit-form'>
       <h2>Редактирование «Новый Агент»</h2>
       <div className='edit-form-wrapper'>
+        <div className='pagination-link-wrapper'>
+          <div className='pagination-link-wrapper-inner'>
+            <a href='#' className='pagination-link pagination-link--active'>
+              Настройка бота
+            </a>
+            <a href='#' className='pagination-link'>
+              Интеграции
+            </a>
+          </div>
+        </div>
         <div className='edit-input-text'>
           <div className='edit-form-input-wrapper'>
             <div className='edit-header'>
@@ -69,7 +79,9 @@ function EditBot() {
           </div>
           <input className='edit-form-input edit-form-input--file' id='name-company' name='name-company' type='file' />
         </div>
-        <button className='edit-button' type='submit'>Сохранить</button>
+        <button className='edit-button' type='submit'>
+          Сохранить
+        </button>
       </div>
     </form>
   );
