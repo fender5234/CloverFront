@@ -1,6 +1,7 @@
 import './EditBot.scss';
 import ask from '../../assets/images/ask.svg';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function EditBot() {
   return (
@@ -12,9 +13,9 @@ function EditBot() {
             <a href='#' className='pagination-link pagination-link--active'>
               Настройка бота
             </a>
-            <a href='#' className='pagination-link'>
+            <NavLink to='/assistans/integration' className='pagination-link'>
               Интеграции
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className='edit-input-text'>

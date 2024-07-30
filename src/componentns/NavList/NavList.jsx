@@ -1,10 +1,11 @@
 import './NavList.scss';
+import { NavLink } from 'react-router-dom';
 
 function NavList() {
     return (
         <ul className='nav-list'>
             <li>
-                <a className='nav-link' href='#'>
+                <NavLink to="assistans" className='nav-link' >
                     <svg className='nav-link-icon' width='20.000000' height='20.000000' viewBox='0 0 20 20' fill='none'>
                         <desc>Created with Pixso.</desc>
                         <defs>
@@ -23,10 +24,10 @@ function NavList() {
                         </g>
                     </svg>
                     AI Ассистенты
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a className='nav-link' href='#'>
+                <NavLink to="instruction" className='nav-link'>
                     <svg className='nav-link-icon' width='24.000000' height='24.000000' viewBox='0 0 24 24' fill='none'>
                         <desc>Created with Pixso.</desc>
                         <defs>
@@ -45,10 +46,10 @@ function NavList() {
                         </g>
                     </svg>
                     Инструкции
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a className='nav-link' href='#'>
+                <NavLink to="support"  className='nav-link'>
                     <svg className='nav-link-icon' width='20.000000' height='20.000000' viewBox='0 0 20 20' fill='none'>
                         <desc>Created with Pixso.</desc>
                         <defs>
@@ -67,7 +68,7 @@ function NavList() {
                         </g>
                     </svg>
                     Техподдержка
-                </a>
+                </NavLink>
             </li>
         </ul>
     )

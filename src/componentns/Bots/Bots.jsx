@@ -1,6 +1,7 @@
 import './Bots.scss';
 import ai from '../../assets/images/ai.svg';
-
+import { NavLink } from 'react-router-dom';
+import getAll from '../../API/agentsGetAll';
 
 function Bots() {
   return (
@@ -12,9 +13,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -24,9 +25,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -36,9 +37,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -48,9 +49,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -60,9 +61,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -72,9 +73,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -84,9 +85,9 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className='bot-wrapper'>
@@ -96,13 +97,17 @@ function Bots() {
         <div className='bot-wrapper-inner'>
           <h2 className='bot-header'>Название бота</h2>
           <p className='bot-description'>Описание че он там и где делаeт.</p>
-          <a className='bot-link' href='#'>
+          <NavLink to='edit-bot' className='bot-link'>
             Редактировать
-          </a>
+          </NavLink>
         </div>
       </div>
+      <button onClick={() => {
+        getAll();
+      }}></button>
     </div>
   );
 }
 
 export default Bots;
+

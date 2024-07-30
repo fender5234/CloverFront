@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './Integration.scss';
 
 import gear from '../../assets/images/gear.svg';
@@ -23,10 +25,10 @@ function Integration() {
                 Подключенно
               </p>
             </div>
-            <a href='#' className='integation-link'>
+            <NavLink to='/assistans/edit-chanel' className='integation-link'>
               <img className='integration-link-image' src={gear} alt='Иконка настройки' />
               Изменить настройки
-            </a>
+            </NavLink>
           </div>
         </li>
         <li>
@@ -39,10 +41,10 @@ function Integration() {
                 Подключенно
               </p>
             </div>
-            <a href='#' className='integation-link'>
+            <NavLink to='/assistans/edit-chanel' className='integation-link'>
               <img className='integration-link-image' src={gear} alt='Иконка настройки' />
               Подключить
-            </a>
+            </NavLink>
           </div>
         </li>
       </ul>

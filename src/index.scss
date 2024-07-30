@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-#root {
+.main-layout {
   display: grid;
   grid-template-columns: 280px 1fr;
   grid-template-rows: 82px 1fr;
@@ -78,7 +78,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  #root {
+  .main-layout {
     grid-template-columns: 1fr;
   }
 }

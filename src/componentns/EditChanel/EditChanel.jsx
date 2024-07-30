@@ -1,5 +1,6 @@
 import CustomCheckBox from '../CustomCheckBox/CustomCheckBox';
 import ask from '../../assets/images/ask.svg';
+import { NavLink } from 'react-router-dom';
 
 function EditChanel() {
   return (
@@ -7,12 +8,12 @@ function EditChanel() {
       <h1 className='integration-header'>Редактировать «Telegram»</h1>
       <div className='pagination-link-wrapper'>
         <div className='pagination-link-wrapper-inner'>
-          <a href='#' className='pagination-link pagination-link--active'>
+          <NavLink to='/assistans/edit-chanel' className='pagination-link pagination-link--active'>
             Подключение
-          </a>
-          <a href='#' className='pagination-link'>
+          </NavLink>
+          <NavLink to='#' className='pagination-link'>
             Инструкция
-          </a>
+          </NavLink>
         </div>
       </div>
       <CustomCheckBox text={'Включен'} />
