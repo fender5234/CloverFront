@@ -64,6 +64,10 @@ body {
   grid-column: 2/3;
   grid-row: 2/3;
   padding: 60px;
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
 }
 
 .layout {
@@ -75,6 +79,10 @@ body {
   border-radius: 30px;
   background-color: #ffffff;
   border: 1px solid #e1e4ea;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {

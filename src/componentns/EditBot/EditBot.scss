@@ -2,6 +2,10 @@
   max-width: 1024px;
   color: #323842;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .edit-form-wrapper {
@@ -25,6 +29,11 @@
   &--file {
     margin-top: 60px;
     max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-width: unset;
   }
 }
 
@@ -103,6 +112,10 @@
 .edit-input-text {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .edit-button {
@@ -110,7 +123,7 @@
   font-family: 'Montserrat-SemiBold';
   padding: 15px;
   font-size: 20px;
-  color: #ffffff;
+  color: #ffffff;   
   border-radius: 10px;
   background-color: #6261cc;
   width: 30%;
@@ -122,5 +135,9 @@
 
   &:hover {
     background-color: #5352ad;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
   }
 }

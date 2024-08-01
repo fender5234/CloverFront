@@ -12,6 +12,10 @@
     height: 1px;
     background-color: #e7e7e9;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .pagination-link {
