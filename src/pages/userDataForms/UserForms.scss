@@ -1,0 +1,119 @@
+.user-form-wrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #222631;
+}
+
+.user-form-title {
+  font-family: 'Montserrat-SemiBold';
+  text-align: center;
+  font-size: 56px;
+  margin: 0 0 10px;
+  line-height: 100%;
+}
+
+.user-form-subtitle {
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.user-form-input {
+  line-height: 100%;
+  display: block;
+  padding: 12px 20px;
+  margin: 0 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 1px solid #1e1e1e29;
+  background-color: #f3f4f8;
+  font-size: 18px;
+  color: #222631;
+  outline: none;
+  transition: all 0.3s linear;
+
+  &:focus {
+    border-color: #0905fc;
+    box-shadow: 0 0 0 0.25rem #a7a6ff40;
+  }
+}
+
+.user-form-input::placeholder {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+}
+
+.user-form {
+  max-width: 416px;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.user-form-button {
+  line-height: 100%;
+  margin: 20px 0 0;
+  min-width: 180px;
+  padding: 15px 30px;
+  text-align: center;
+  color: #e4e5e7e1;
+  background-color: #1bc339;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  transition: all 0.3s linear;
+
+  &:active,
+  &:hover {
+    background-color: #18a03e;
+  }
+}
+
+.user-form-link {
+  display: block;
+  padding: 12px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #e4e5e7e1;
+  transition: all 0.3s linear;
+
+  &:active,
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.user-form-button-link {
+  line-height: 100%;
+  display: block;
+  min-width: 180px;
+  padding: 15px 30px;
+  text-align: center;
+  color: #e4e5e7e1;
+  background-color: #319afc;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  transition: all 0.3s linear;
+
+  &:active,
+  &:hover {
+    background-color: #59aeff;
+  }
+}
+
+.user-form-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.user-form-info-link {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e4e5e7e1;
+}
