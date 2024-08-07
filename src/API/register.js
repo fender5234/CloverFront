@@ -1,7 +1,7 @@
 // Функция для регистрации)
 async function register(userData) {
   try {
-    let register = await fetch('http://127.0.0.1:8000/auth/register', {
+    let register = await fetch('https://lexashvetsoff-onlineconsultantai-api-cfe7.twc1.net/auth/register', {
       method: 'POST',
       credentials: 'include',
       headers: {

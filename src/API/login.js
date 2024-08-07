@@ -1,7 +1,7 @@
 // Функция для логина(входа в личный кабинет)
 async function login(userData) {
   try {
-    let register = await fetch('http://127.0.0.1:8000/auth/login', {
+    let register = await fetch('https://lexashvetsoff-onlineconsultantai-api-cfe7.twc1.net/auth/login', {
       method: 'POST',
       credentials: 'include',
       headers: {
