@@ -1,5 +1,7 @@
+
+
 // Функция для логина(входа в личный кабинет)
-async function login(userData) {
+async function login(userData, setUserIsLogin) {
   try {
     let register = await fetch('https://lexashvetsoff-onlineconsultantai-api-cfe7.twc1.net/auth/login', {
       method: 'POST',
@@ -13,6 +15,8 @@ async function login(userData) {
 
     if (register.ok) {
       console.log('Все получилось!');
+      setUserIsLogin(true);
+      return true;
     }
   }
 
@@ -21,5 +25,5 @@ async function login(userData) {
   }
 }
 
-export default login; 
+export default login;
 

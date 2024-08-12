@@ -1,17 +1,29 @@
 import './UserForms.scss';
 import login from '../../API/login.js';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
 import { useState } from 'react';
+import { useContext } from 'react';
+import loginContext from '../../context/loginContext.js';
+import { useEffect } from 'react';
 
 function Login() {
+  const navigate = useNavigate();
+  const { userIsLogin, setUserIsLogin } = useContext(loginContext);
+
   function handleInputChange(e, name) {
     setUserData({ ...userData, [name]: e.target.value });
   }
 
   const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    if (userIsLogin) {
+      navigate('/');
+    }
+  }, [userIsLogin]);
 
   return (
     <div className='user-form-wrapper'>
@@ -22,7 +34,7 @@ function Login() {
         className='user-form'
         onSubmit={(evt) => {
           evt.preventDefault();
-          login(userData);
+          login(userData, setUserIsLogin);
         }}>
         <h1 className='user-form-title'>Login</h1>
         <p className='user-form-subtitle'>Sign in to your account</p>

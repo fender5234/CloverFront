@@ -1,9 +1,16 @@
-import { Outlet } from 'react-router';
+import { useNavigate, Outlet } from 'react-router';
+import { useEffect } from 'react';
 import Header from '../Header/Header';
 import SideBar from '../SideBar/SideBar';
+import { useContext } from 'react';
+import loginContext from '../../context/loginContext';
 
 function MainLayout({ sidebarState, sidebarOpen }) {
-  return (
+  const { userIsLogin } = useContext(loginContext);
+
+  const navigate = useNavigate();
+
+  return userIsLogin ? (
     <div className='main-layout'>
       <Header sidebarOpen={sidebarOpen} sidebarState={sidebarState} />
       <SideBar sidebarState={sidebarState} />
@@ -19,6 +26,10 @@ function MainLayout({ sidebarState, sidebarOpen }) {
         </div>
       </main>
     </div>
+  ) : (
+    useEffect(() => {
+      navigate('/login');
+    }, [userIsLogin])
   );
 }
 
